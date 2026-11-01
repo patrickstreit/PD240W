@@ -2589,7 +2589,7 @@
 		)
 		(uuid "de619514-64bf-429c-8231-fefa0d427dd8")
 	)
-	(text "17V 600mA 700kHz Buck Regulator"
+	(text "5V 600mA 700kHz Buck Regulator (ex 17V)"
 		(exclude_from_sim no)
 		(at 222.25 231.14 0)
 		(effects
@@ -2672,7 +2672,7 @@
 		)
 		(uuid "97aa4ff0-28ae-45f8-8d60-a3bbd7784e29")
 	)
-	(text_box "DESIGN NOTE:\nFB: Vout = 0.765 x (1 + Rtop/Rbot)\n= 0.765 x (1 + (200k / 9.4k) = 17.04V\n\nOptimized for 600mA:\nInductor: (48-17)x17 / (700000 x 48 x 0.18) = 87uH\n68uH was selected as a close standard value."
+	(text_box "DESIGN NOTE:\nFB: Vout = 0.765 x (1 + Rtop/Rbot)\n= 0.765 x (1 + (51.7k / 9.4k) = 4.97V\n(was 200k / 9.4k = 17.04V)\nInductor ripple @48V in: (48-5)x5 / (700000 x 48 x 68uH) = 94mA\nLED R86 1k: (5 - 2.65) / 1000 = 2.4mA"
 		(exclude_from_sim no)
 		(at 295.91 214.63 0)
 		(size 52.07 19.685)
@@ -27275,7 +27275,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "100k 1%"
+		(property "Value" "47k 1%"
 			(at 269.875 175.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27308,7 +27308,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, 100k, 1%, 100ppm, 1/16W, 1005, 0402"
+		(property "Description" "Resistor, 47k, 1%, 100ppm, 1/16W, 1005, 0402"
 			(at 267.97 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -27319,7 +27319,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25741"
+		(property "LCSC" "C25792"
 			(at 267.97 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -27341,7 +27341,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "0402WGF1003TCE"
+		(property "Manufacturer Part Number" "0402WGF4702TCE"
 			(at 267.97 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -27464,7 +27464,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "100k 1%"
+		(property "Value" "4.7k 1%"
 			(at 270.51 183.515 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27497,7 +27497,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, 100k, 1%, 100ppm, 1/16W, 1005, 0402"
+		(property "Description" "Resistor, 4.7k, 1%, 100ppm, 1/16W, 1005, 0402"
 			(at 267.97 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -27508,7 +27508,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25741"
+		(property "LCSC" "C25900"
 			(at 267.97 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -27530,7 +27530,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "0402WGF1003TCE"
+		(property "Manufacturer Part Number" "0402WGF4701TCE"
 			(at 267.97 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -28427,7 +28427,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "10k 1%"
+		(property "Value" "1k 1%"
 			(at 317.5 173.355 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28460,7 +28460,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, 10k, 1%, ±25ppm, 1/16W, 1005, 0402"
+		(property "Description" "Resistor, 1k, 1%, 100ppm, 1/16W, 1005, 0402"
 			(at 314.96 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -28471,7 +28471,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C11702"
 			(at 314.96 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -28493,7 +28493,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "0402WGF1002TCE"
+		(property "Manufacturer Part Number" "0402WGF1001TCE"
 			(at 314.96 171.45 0)
 			(hide yes)
 			(show_name no)

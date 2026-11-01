@@ -1,5 +1,16 @@
 # Changelog
 
+## [Unreleased] - Hardware fork changes
+
+### Hardware
+
+- Fixed swapped USB D+/D- at the RP2040 (erratum of PCB v1.0.0): U9 pin 46 (USB_DM) now connects to USB_D_INT_N and pin 47 (USB_DP) to USB_D_INT_P. The B.Cu section of the pair between the resistor-side and MCU-side vias was removed and must be re-routed in KiCad (see PR description).
+- Reworked the 17V auxiliary buck (U12) to 5V: R87 100k -> 47k, R88 100k -> 4.7k (Vout = 0.765 x (1 + 51.7k/9.4k) = 4.97V). LED resistor R86 10k -> 1k. Net names (+17V, 17V_EN) are unchanged.
+
+### Firmware
+
+- Aux buck interlock lowered from VBUS >= 18V to >= 7V to match the 5V aux output; UI label shows "5V Buck".
+
 ## [2.0.4] - 2026-07-07
 
 ### Bug Fixes

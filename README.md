@@ -138,7 +138,7 @@ Once the firmware has been successfully flashed, connect the device to a compati
 | Encoder Rotate | Navigate menus / Adjust values |
 | Encoder Click | Confirm / Select |
 | BTN1 (top) | Toggle load switch output |
-| BTN2 (bottom) | Toggle 17V buck (requires VBUS > 18V) |
+| BTN2 (bottom) | Toggle 5V aux buck (requires VBUS > 7V) |
 
 <p align="center">
   <img src="photos/PD240W_demo.gif" alt="PD240W usage demo" width="100%">

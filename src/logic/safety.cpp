@@ -252,7 +252,7 @@ void Safety::updateVoltage() {
         uint32_t vbus_mv = static_cast<uint32_t>(_state.vbus_voltage_v * 1000.0f);
         if (vbus_mv < AppConfig::MIN_VBUS_FOR_17V_MV) {
             hw.en17v.off();
-            LOG_WARN("17V buck auto-disabled: VBUS=%.1fV < 18V", _state.vbus_voltage_v);
+            LOG_WARN("Aux buck auto-disabled: VBUS=%.1fV < %.1fV", _state.vbus_voltage_v, AppConfig::MIN_VBUS_FOR_17V_MV / 1000.0f);
             hw.buzzer.playTone(AppConfig::BEEP_ERROR_FREQ, AppConfig::BEEP_WARNING_DURATION);
         }
     }

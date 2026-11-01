@@ -13,7 +13,7 @@
 // - Encoder click: Confirm/select
 // - Encoder long press (800ms): Go back/exit
 // - BTN1: Toggle load switch (any state)
-// - BTN2: Toggle 17V buck (any state, only if VBUS > 18V)
+// - BTN2: Toggle 5V aux buck (any state, only if VBUS > 7V)
 // ============================================================================
 
 // Application states
