@@ -42,7 +42,7 @@ namespace AppConfig {
     constexpr uint8_t TEMP_WARNING_C = 65;             // Temperature warning threshold [C]
     constexpr uint8_t TEMP_CRITICAL_WARNING_C = 75;    // Temperature critical warning threshold [C]
     constexpr uint8_t TEMP_SHUTDOWN_C = 80;            // Temperature shutdown threshold [C]
-    constexpr uint32_t MIN_VBUS_FOR_17V_MV = 18000;    // Minimum VBUS for 17V buck enable [mV]
+    constexpr uint32_t MIN_VBUS_FOR_17V_MV = 7000;     // Minimum VBUS for aux buck enable [mV] (aux buck reworked from 17V to 5V)
 
     // -------------------------------------------------------------------------
     // Current Limit Settings

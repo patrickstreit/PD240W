@@ -1146,7 +1146,7 @@ void DisplayManager::drawOutputStatus() {
     // Only draw labels on full redraw
     if (_needs_full_redraw) {
         hw.display.drawStringAA(MARGIN, y + 2, "Load Switch:", UIColors::TEXT_SECONDARY, UIColors::BACKGROUND, FONT_SMALL);
-        hw.display.drawStringAA(MARGIN, y + 22, "17V Buck:", UIColors::TEXT_SECONDARY, UIColors::BACKGROUND, FONT_SMALL);
+        hw.display.drawStringAA(MARGIN, y + 22, "5V Buck:", UIColors::TEXT_SECONDARY, UIColors::BACKGROUND, FONT_SMALL);
         // Force badge redraw
         _last_load_on = !load_on;
         _last_buck_on = !buck_on;
